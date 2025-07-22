@@ -35,11 +35,8 @@ async function checkAvailability({ riverName, startDate, endDate }) {
   }
 }
 
-// Export a single function that index.js can call
+// ✅ Export this so index.js can call it on /run
 module.exports = async function runBot() {
   return await checkAvailability({
     riverName: "Middle Fork Salmon",
-    startDate: "2025-07-15",
-    endDate: "2025-07-25",
-  });
-};
+    s
